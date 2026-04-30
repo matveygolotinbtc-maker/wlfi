@@ -1,0 +1,21 @@
+{
+  "name": "dolomite-wlfi-liquidator",
+  "version": "0.1.0",
+  "description": "Read-only Dolomite WLFI liquidation risk scanner",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "scan": "tsx src/main.ts",
+    "decode:liquidation": "tsx scripts/decodeLiquidationTx.ts",
+    "test": "tsx test/runTests.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
